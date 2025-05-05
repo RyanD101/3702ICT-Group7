@@ -365,7 +365,7 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Samples
+    - Assets
     m_Globs: []
     m_ProductIds: 
     m_AnyWithAssetOrigin: 0
@@ -375,17 +375,16 @@ MonoBehaviour:
   m_ViewMode: 1
   m_StartGridSize: 16
   m_LastFolders:
-  - Assets/Samples
+  - Assets
   m_LastFoldersGridSize: 16
-  m_LastProjectPath: C:\Users\bill\Downloads\Create-with-VR_2022LTS\Create-with-VR_2022LTS\VR
-    Room
+  m_LastProjectPath: C:\Users\bill\Documents\GitHub\3702ICT-Group7\Group7-3702ICT
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 4cb80000
-    m_LastClickedID: 47180
-    m_ExpandedIDs: 0000000030b6000032b6000034b6000036b6000038b60000
+    m_SelectedIDs: 14b80000
+    m_LastClickedID: 47124
+    m_ExpandedIDs: 00000000b4bc0000b6bc0000b8bc0000babc0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -414,7 +413,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 0000000030b6000032b6000034b6000036b6000038b60000
+    m_ExpandedIDs: 00000000b4bc0000b6bc0000b8bc0000babc0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -564,7 +563,7 @@ MonoBehaviour:
       scrollPos: {x: 0, y: 0}
       m_SelectedIDs: 
       m_LastClickedID: 0
-      m_ExpandedIDs: 86e0ffffa8e0ffffb6e0ffff4ae2ffff1cfbffffaab50000
+      m_ExpandedIDs: 6af2ffff7cf5ffff1cfbffff
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -1183,9 +1182,9 @@ MonoBehaviour:
   m_AudioPlay: 0
   m_DebugDrawModesUseInteractiveLightBakingData: 0
   m_Position:
-    m_Target: {x: 0.02138609, y: 1.3783352, z: 0.078556776}
+    m_Target: {x: 1.0375099, y: 0.49711016, z: 5.622512}
     speed: 2
-    m_Value: {x: 0.02138609, y: 1.3783352, z: 0.078556776}
+    m_Value: {x: 1.0375099, y: 0.49711016, z: 5.622512}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -1231,20 +1230,20 @@ MonoBehaviour:
     m_GridAxis: 1
     m_gridOpacity: 0.5
   m_Rotation:
-    m_Target: {x: -0.091651, y: 0.50787395, z: -0.05445288, w: -0.8548106}
+    m_Target: {x: -0.10201554, y: -0.17454542, z: 0.01818502, w: -0.97918516}
     speed: 2
-    m_Value: {x: -0.091651, y: 0.50787395, z: -0.054452885, w: -0.85481066}
+    m_Value: {x: -0.10201555, y: -0.17454542, z: 0.018185021, w: -0.9791852}
   m_Size:
-    m_Target: 1.6018847
+    m_Target: 4.776298
     speed: 2
-    m_Value: 1.6018847
+    m_Value: 4.776298
   m_Ortho:
     m_Target: 0
     speed: 2
     m_Value: 0
   m_CameraSettings:
-    m_Speed: 1.2803607
-    m_SpeedNormalized: 0.64000034
+    m_Speed: 0.9205409
+    m_SpeedNormalized: 0.46000046
     m_SpeedMin: 0.001
     m_SpeedMax: 2
     m_EasingEnabled: 1
