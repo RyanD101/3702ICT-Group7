@@ -1,29 +1,33 @@
 using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityEngine.XR.Interaction.Toolkit;
 
 public class PhoneScreenManager : MonoBehaviour
 {
     [Header("Phone-Screen Toggle")]
-    [Tooltip("Your quad or world-space Canvas that shows the menu")]
+    [Tooltip("Quad")]
     public GameObject phoneScreen;
-    [Tooltip("Drag your existing InputActionReference (e.g. UI Press) here")]
+    [Tooltip("InputActionReference")]
     public InputActionReference toggleAction;
 
     [Header("Menu UI Elements")]
-    [Tooltip("The full-screen background Image/Panel")]
+    [Tooltip("Background")]
     public GameObject menuBackground;
     [Tooltip("Button inside the menu that closes it")]
     public GameObject closeButton;
     [Tooltip("Button that re-opens the menu")]
     public GameObject openButton;
+    [Header("Treasure GameObject")]
+    public GameObject treasureRoot;
+    
 
     private void Awake()
     {
-        // start everything hidden
         phoneScreen.SetActive(false);
         menuBackground.SetActive(false);
         closeButton.SetActive(false);
         openButton.SetActive(true);
+        treasureRoot.SetActive(false);
     }
 
     private void OnEnable()
@@ -40,11 +44,10 @@ public class PhoneScreenManager : MonoBehaviour
 
     private void OnTogglePhoneScreen(InputAction.CallbackContext ctx)
     {
-        // Show or hide the entire phone-screen menu
         bool isOn = !phoneScreen.activeSelf;
         phoneScreen.SetActive(isOn);
+        treasureRoot.SetActive(isOn);
 
-        // when you open the menu, also show background + close button
         if (isOn)
         {
             menuBackground.SetActive(true);
@@ -53,7 +56,6 @@ public class PhoneScreenManager : MonoBehaviour
         }
     }
 
-    // Called by your Close Button’s OnClick()
     public void CloseMenu()
     {
         menuBackground.SetActive(false);
@@ -61,7 +63,6 @@ public class PhoneScreenManager : MonoBehaviour
         openButton.SetActive(true);
     }
 
-    // Called by your Open Button’s OnClick()
     public void OpenMenu()
     {
         menuBackground.SetActive(true);
