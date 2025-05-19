@@ -18,7 +18,7 @@ public class CollectableItem : UnityEngine.XR.Interaction.Toolkit.Interactables.
 
         if (collectVfx != null)
             Instantiate(collectVfx, transform.position, Quaternion.identity);
-            
+
         Destroy(gameObject);
     }
 }
