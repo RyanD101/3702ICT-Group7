@@ -19,7 +19,8 @@ public class PhoneScreenManager : MonoBehaviour
     public GameObject openButton;
     [Header("Treasure GameObject")]
     public GameObject treasureRoot;
-    
+    [Header("ColletableHint GameObject")]
+    public GameObject hintRoot;
 
     private void Awake()
     {
@@ -28,6 +29,7 @@ public class PhoneScreenManager : MonoBehaviour
         closeButton.SetActive(false);
         openButton.SetActive(true);
         treasureRoot.SetActive(false);
+        hintRoot.SetActive(false);
     }
 
     private void OnEnable()
@@ -47,6 +49,7 @@ public class PhoneScreenManager : MonoBehaviour
         bool isOn = !phoneScreen.activeSelf;
         phoneScreen.SetActive(isOn);
         treasureRoot.SetActive(isOn);
+        hintRoot.SetActive(isOn);
 
         if (isOn)
         {
