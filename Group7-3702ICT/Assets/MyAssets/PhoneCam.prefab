@@ -1,5 +1,38 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!1 &45529499313629020
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 573994614784024657}
+  m_Layer: 0
+  m_Name: Phonecam12
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &573994614784024657
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 45529499313629020}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -0.005000159, y: -0.003426671, z: 1.305}
+  m_LocalScale: {x: 1.7502712, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 7209118215967839417}
+  - {fileID: 8786337374735270207}
+  m_Father: {fileID: 3668208404647628879}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &252120026657045679
 GameObject:
   m_ObjectHideFlags: 0
@@ -245,7 +278,7 @@ Transform:
   m_LocalScale: {x: 0.57134, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 7209118215967839417}
+  - {fileID: 573994614784024657}
   - {fileID: 8165118736503920769}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -380,18 +413,18 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3185397330607874314}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.0019999999, y: 0.002, z: 0.0020000003}
+  m_LocalPosition: {x: 0, y: 0, z: -0.255}
+  m_LocalScale: {x: 0.0012241127, y: 0.002324, z: 0.0015795002}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 2358139428326173846}
   - {fileID: 6296301949271376523}
   - {fileID: 8300992776868839364}
-  m_Father: {fileID: 7209118215967839417}
+  m_Father: {fileID: 573994614784024657}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0.00042665005}
   m_SizeDelta: {x: 1200, y: 2000}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!223 &6594657191149880269
@@ -638,12 +671,11 @@ Transform:
   m_GameObject: {fileID: 5341115985930662260}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.005, y: -0.003000021, z: 1.05}
-  m_LocalScale: {x: 1.0712646, y: 1.162, z: 0.7897499}
+  m_LocalPosition: {x: 0, y: 0.00042665005, z: -0.255}
+  m_LocalScale: {x: 0.6120564, y: 1.162, z: 0.7897499}
   m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 8786337374735270207}
-  m_Father: {fileID: 3668208404647628879}
+  m_Children: []
+  m_Father: {fileID: 573994614784024657}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!33 &6306400864691148985
 MeshFilter:
