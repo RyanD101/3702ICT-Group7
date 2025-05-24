@@ -340,7 +340,7 @@ MonoBehaviour:
   m_Pos:
     serializedVersion: 2
     x: 0
-    y: 872
+    y: 817
     width: 2022
     height: 522
   m_SerializedDataModeController:
@@ -384,7 +384,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 79}
     m_SelectedIDs: 74c90000
     m_LastClickedID: 51572
-    m_ExpandedIDs: 00000000f4c8000000ca9a3bffffff7f
+    m_ExpandedIDs: 000000009cc90000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -413,7 +413,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 00000000f4c80000
+    m_ExpandedIDs: 000000009cc90000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -493,8 +493,8 @@ MonoBehaviour:
     m_TextWithWhitespace: "Inspector\u200B"
   m_Pos:
     serializedVersion: 2
-    x: 2023
-    y: 79
+    x: 2024
+    y: 24
     width: 536
     height: 1315
   m_SerializedDataModeController:
@@ -544,7 +544,7 @@ MonoBehaviour:
   m_Pos:
     serializedVersion: 2
     x: 0
-    y: 79
+    y: 24
     width: 331
     height: 767
   m_SerializedDataModeController:
@@ -561,8 +561,8 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 66bb0000
-      m_LastClickedID: 47974
+      m_SelectedIDs: 
+      m_LastClickedID: 0
       m_ExpandedIDs: 0c68fcff30a2fdffdaa3fdff92faffffa0faffff0afbffff1afbffff70bb0000b6bc0000
       m_RenameOverlay:
         m_UserAcceptedRename: 0
@@ -610,8 +610,8 @@ MonoBehaviour:
     m_TextWithWhitespace: "Scene\u200B"
   m_Pos:
     serializedVersion: 2
-    x: 332
-    y: 79
+    x: 333
+    y: 24
     width: 1689
     height: 767
   m_SerializedDataModeController:
@@ -1246,7 +1246,7 @@ MonoBehaviour:
   m_Rotation:
     m_Target: {x: -0.02051475, y: -0.49624377, z: -0.0118496185, w: 0.86807954}
     speed: 2
-    m_Value: {x: -0.017923014, y: -0.49488002, z: -0.010331134, w: 0.868715}
+    m_Value: {x: 0.02051475, y: 0.49624377, z: 0.0118496185, w: -0.8680795}
   m_Size:
     m_Target: 71.54861
     speed: 2
