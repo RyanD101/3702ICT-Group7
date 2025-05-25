@@ -17,6 +17,8 @@ public class PhoneScreenManager : MonoBehaviour
     public GameObject closeButton;
     [Tooltip("Button that re-opens the menu")]
     public GameObject openButton;
+    [Tooltip("Leave button")]
+    public GameObject LeaveButton;
     [Header("Treasure GameObject")]
     public GameObject treasureRoot;
     [Header("ColletableHint GameObject")]
@@ -34,6 +36,7 @@ public class PhoneScreenManager : MonoBehaviour
         treasureRoot.SetActive(false);
         hintRoot.SetActive(false);
         treasureView.SetActive(false);
+        LeaveButton.SetActive(false);
     }
 
     private void OnEnable()
@@ -63,6 +66,7 @@ public class PhoneScreenManager : MonoBehaviour
         closeButton.SetActive(isOn);
         openButton.SetActive(!isOn);
         treasureView.SetActive(isOn);
+        LeaveButton.SetActive(isOn);
     }
 
     public void CloseMenu()
@@ -71,6 +75,7 @@ public class PhoneScreenManager : MonoBehaviour
         closeButton.SetActive(false);
         openButton.SetActive(true);
         treasureView.SetActive(false);
+        LeaveButton.SetActive(false);
     }
 
     public void OpenMenu()
@@ -79,5 +84,6 @@ public class PhoneScreenManager : MonoBehaviour
         closeButton.SetActive(true);
         openButton.SetActive(false);
         treasureView.SetActive(true);
+        LeaveButton.SetActive(true);
     }
 }

@@ -5,6 +5,7 @@ public class MenuController : MonoBehaviour
     public GameObject mainMenuPanel;
     public GameObject levelSelectPanel;
     public GameObject tutorialPanel;
+    public GameObject rewardsPanel;
 
     public void ShowLevelSelect()
     {
@@ -23,5 +24,11 @@ public class MenuController : MonoBehaviour
         mainMenuPanel.SetActive(true);
         levelSelectPanel.SetActive(false);
         tutorialPanel.SetActive(false);
+        rewardsPanel.SetActive(false);
+    }
+    public void ShowRewards()
+    {
+        mainMenuPanel.SetActive(false);
+        rewardsPanel.SetActive(true);
     }
 }

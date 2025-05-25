@@ -3,23 +3,21 @@ using TMPro;
 
 public class ScoreDisplay : MonoBehaviour
 {
-    [Tooltip("Drag text here")]
+    [Tooltip("Drag your TextMeshProUGUI here")]
     public TMP_Text scoreText;
 
-    void Start()
-    {
-        scoreText.text = GameManager.Instance.Score.ToString();
-        GameManager.Instance.OnScoreChanged += UpdateScoreText;
-    }
+    int _lastScore = int.MinValue;
 
-    void OnDestroy()
+    void Update()
+{
+    int current = GameManager.Instance.Score;
+    if (current != _lastScore)
     {
-        if (GameManager.Instance != null)
-            GameManager.Instance.OnScoreChanged -= UpdateScoreText;
-    }
+        _lastScore = current;
 
-    void UpdateScoreText(int newScore)
-    {
-        scoreText.text = newScore.ToString();
+
+        string suffix = (current == 1) ? " point" : " points";
+        scoreText.text = current + suffix;
     }
+}
 }
