@@ -19,7 +19,7 @@ MonoBehaviour:
     width: 2560
     height: 1397
   m_ShowMode: 4
-  m_Title: Scene
+  m_Title: Hierarchy
   m_RootView: {fileID: 6}
   m_MinSize: {x: 875, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
@@ -48,7 +48,7 @@ MonoBehaviour:
   m_MinSize: {x: 300, y: 100}
   m_MaxSize: {x: 24288, y: 16192}
   vertical: 0
-  controlID: 123
+  controlID: 49
   draggingID: 0
 --- !u!114 &3
 MonoBehaviour:
@@ -365,7 +365,7 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Stylized Nature Environment/Nature
+    - Assets/Scripts
     m_Globs: []
     m_ProductIds: 
     m_AnyWithAssetOrigin: 0
@@ -375,16 +375,16 @@ MonoBehaviour:
   m_ViewMode: 1
   m_StartGridSize: 16
   m_LastFolders:
-  - Assets/Stylized Nature Environment/Nature
+  - Assets/Scripts
   m_LastFoldersGridSize: 16
   m_LastProjectPath: C:\Users\bill\OneDrive\Documents\GitHub\3702ICT-Group7\Group7-3702ICT
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
-    scrollPos: {x: 0, y: 138}
-    m_SelectedIDs: 34790100
-    m_LastClickedID: 96564
-    m_ExpandedIDs: 00000000e4ce00006ecf000074cf000082cf0000aecf00009e410100ce410100e6410100fa410100d44401002859010038590100f2660100f46601002e770100307701002c79010000ca9a3bffffff7f
+    scrollPos: {x: 0, y: 79}
+    m_SelectedIDs: 2cf30000
+    m_LastClickedID: 62252
+    m_ExpandedIDs: 0000000060f2000034f3000000ca9a3bffffff7f
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -413,7 +413,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 00000000e4ce0000
+    m_ExpandedIDs: 0000000060f20000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -441,22 +441,22 @@ MonoBehaviour:
   m_ListAreaState:
     m_SelectedInstanceIDs: 
     m_LastClickedInstanceID: 0
-    m_HadKeyboardFocusLastEvent: 1
+    m_HadKeyboardFocusLastEvent: 0
     m_ExpandedInstanceIDs: c6230000eee70000f4b5000000fc00007cb90000d0bc000000000000cec100007abe0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
-      m_Name: Nature
-      m_OriginalName: Nature
+      m_Name: 
+      m_OriginalName: 
       m_EditFieldRect:
         serializedVersion: 2
         x: 0
         y: 0
         width: 0
         height: 0
-      m_UserData: 96564
+      m_UserData: 0
       m_IsWaitingForDelay: 0
       m_IsRenaming: 0
-      m_OriginalEventType: 0
+      m_OriginalEventType: 11
       m_IsRenamingFilename: 1
       m_TrimLeadingAndTrailingWhitespace: 0
       m_ClientGUIView: {fileID: 5}
@@ -561,9 +561,9 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 
-      m_LastClickedID: 0
-      m_ExpandedIDs: a4effaff6e6dfbff846dfbff3a70fbffea71fbff7c41feff52f7ffff7cf7ffff30f8ffff3ef8ffff82f8ffff82c000000ac2000014c300005ec3000090c30000a8c30000f0c3000080c50000527301005873010054e80100fee80100
+      m_SelectedIDs: 1ef5ffff
+      m_LastClickedID: -2786
+      m_ExpandedIDs: 7061ffff4862ffffcac1ffff0af5ffff1ef5ffff38f8ffff18fbffff0ed9000032d900009cda0000aedc00002adf0000
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -1252,9 +1252,9 @@ MonoBehaviour:
   m_AudioPlay: 0
   m_DebugDrawModesUseInteractiveLightBakingData: 0
   m_Position:
-    m_Target: {x: 52.54473, y: 13.961381, z: -30.858927}
+    m_Target: {x: 11.495698, y: -12.30803, z: 21.432478}
     speed: 2
-    m_Value: {x: 52.54473, y: 13.961381, z: -30.858927}
+    m_Value: {x: 11.495698, y: -12.308031, z: 21.43248}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -1300,13 +1300,13 @@ MonoBehaviour:
     m_GridAxis: 1
     m_gridOpacity: 0.5
   m_Rotation:
-    m_Target: {x: -0.10502496, y: 0.06386959, z: -0.0062379427, w: -0.9932466}
+    m_Target: {x: -0.24014051, y: -0.13828534, z: 0.034349404, w: -0.9611179}
     speed: 2
-    m_Value: {x: -0.10494569, y: 0.06232708, z: -0.006075274, w: -0.99250424}
+    m_Value: {x: -0.23844248, y: -0.13965903, z: 0.03446965, w: -0.9604439}
   m_Size:
-    m_Target: 6.1170316
+    m_Target: 20.820843
     speed: 2
-    m_Value: 5.8536186
+    m_Value: 20.820843
   m_Ortho:
     m_Target: 0
     speed: 2

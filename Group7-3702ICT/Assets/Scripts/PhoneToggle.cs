@@ -21,6 +21,9 @@ public class PhoneScreenManager : MonoBehaviour
     public GameObject treasureRoot;
     [Header("ColletableHint GameObject")]
     public GameObject hintRoot;
+    [Header("Treasure view button")]  
+    public GameObject treasureView;
+
 
     private void Awake()
     {
@@ -30,6 +33,7 @@ public class PhoneScreenManager : MonoBehaviour
         openButton.SetActive(true);
         treasureRoot.SetActive(false);
         hintRoot.SetActive(false);
+        treasureView.SetActive(false);
     }
 
     private void OnEnable()
@@ -46,17 +50,19 @@ public class PhoneScreenManager : MonoBehaviour
 
     private void OnTogglePhoneScreen(InputAction.CallbackContext ctx)
     {
+        DoToggle();
+    }
+
+    public void DoToggle()
+    {
         bool isOn = !phoneScreen.activeSelf;
         phoneScreen.SetActive(isOn);
         treasureRoot.SetActive(isOn);
         hintRoot.SetActive(isOn);
-
-        if (isOn)
-        {
-            menuBackground.SetActive(true);
-            closeButton.SetActive(true);
-            openButton.SetActive(false);
-        }
+        menuBackground.SetActive(isOn);
+        closeButton.SetActive(isOn);
+        openButton.SetActive(!isOn);
+        treasureView.SetActive(isOn);
     }
 
     public void CloseMenu()
@@ -64,6 +70,7 @@ public class PhoneScreenManager : MonoBehaviour
         menuBackground.SetActive(false);
         closeButton.SetActive(false);
         openButton.SetActive(true);
+        treasureView.SetActive(false);
     }
 
     public void OpenMenu()
@@ -71,5 +78,6 @@ public class PhoneScreenManager : MonoBehaviour
         menuBackground.SetActive(true);
         closeButton.SetActive(true);
         openButton.SetActive(false);
+        treasureView.SetActive(true);
     }
 }
