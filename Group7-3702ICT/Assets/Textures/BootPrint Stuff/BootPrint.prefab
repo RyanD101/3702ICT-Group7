@@ -66,7 +66,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 709181ff0204cc84ea5f0836f6fddc99, type: 2}
+  - {fileID: 2100000, guid: ecb6c03ebc7c9a1458c6ca5800ce6b8b, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -124,12 +124,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   footprintPrefab: {fileID: 0}
   treasureChest: {fileID: 0}
-  player: {fileID: 0}
   spacing: 1
+  movementThreshold: 0.5
   groundLayer:
     serializedVersion: 2
     m_Bits: 0
   obstacleLayer:
     serializedVersion: 2
     m_Bits: 0
-  updateThreshold: 0.5
+  clueClickPopup: {fileID: 0}
+  treasureTag: Treasure
+  footprintTag: Footprint
+  footprintLayerName: PhoneVisible

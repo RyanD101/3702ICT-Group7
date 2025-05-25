@@ -1,8 +1,8 @@
-﻿using UnityEngine.AI;
+using UnityEngine.AI;
 using UnityEngine;
 using System.Collections.Generic;
 
-public class FootprintPath2 : MonoBehaviour
+public class FootprintPath : MonoBehaviour
 {
     public GameObject footprintPrefab;
     public Transform treasureChest;

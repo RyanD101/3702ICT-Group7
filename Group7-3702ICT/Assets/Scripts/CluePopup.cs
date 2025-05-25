@@ -1,53 +1,47 @@
+using System;
 using UnityEngine;
-using UnityEngine.InputSystem;
-
-public class ClueClickPopup : MonoBehaviour
+using UnityEngine.XR.Interaction.Toolkit;
+public class ClueClickPopup : UnityEngine.XR.Interaction.Toolkit.Interactables.XRBaseInteractable
 {
     public GameObject popupCanvas;
+    public FootprintPath2 footprintPath;  // Assign in inspector or dynamically
     public Transform playerCamera;
+    public GameObject questionMark;
 
-    void Update()
+    protected override void OnSelectEntered(SelectEnterEventArgs args)
     {
-        if (Mouse.current.leftButton.wasPressedThisFrame)
+        base.OnSelectEntered(args);
+
+        bool isActive = popupCanvas.activeSelf;
+        popupCanvas.SetActive(!isActive);
+
+        if (!isActive)
         {
-            Ray ray = Camera.main.ScreenPointToRay(Mouse.current.position.ReadValue());
+            Vector3 popupPosition = playerCamera.position + playerCamera.forward * 2f;
+            popupPosition.y = playerCamera.position.y;
 
-            int groundLayer = LayerMask.NameToLayer("Ground");
-            int layerMask = ~(1 << groundLayer);  // All layers except ground
-
-            Debug.DrawRay(ray.origin, ray.direction * 10, Color.red, 2f);
-
-            if (Physics.Raycast(ray, out RaycastHit hit, Mathf.Infinity, layerMask))
-            {
-                Debug.Log("Hit: " + hit.transform.name);
-
-                if (hit.transform == transform)
-                {
-                    bool isActive = popupCanvas.activeSelf;
-                    popupCanvas.SetActive(!isActive);
-
-                    if (!isActive)
-                    {
-                        Vector3 popupPosition = playerCamera.position + playerCamera.forward * 2f;
-                        popupPosition.y = playerCamera.position.y;  // keep popup at player eye level, no dipping down
-
-                        popupCanvas.transform.position = popupPosition;
-                        popupCanvas.transform.rotation = Quaternion.LookRotation(playerCamera.forward);
-                    }
-
-                }
-            }
-            else
-            {
-                Debug.Log("No hit on allowed layers.");
-            }
+            popupCanvas.transform.position = popupPosition;
+            popupCanvas.transform.rotation = Quaternion.LookRotation(playerCamera.forward);
         }
     }
 
     public void ClosePopup()
     {
-        gameObject.SetActive(false);
         popupCanvas.SetActive(false);
-    }
 
+        // Destroy footprints spawned by this footprint path
+        if (footprintPath != null)
+        {
+            footprintPath.ClearExistingFootprints();
+        }
+        else
+        {
+            Debug.LogWarning("FootprintPath not assigned!");
+        }
+
+        if (questionMark != null)
+        {
+            Destroy(questionMark);
+        }
+    }
 }
