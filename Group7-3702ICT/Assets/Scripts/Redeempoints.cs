@@ -3,24 +3,21 @@ using TMPro;
 
 public class ShopManager : MonoBehaviour
 {
+    const int wallpaperCost = 2;
     public TMP_Text feedbackText;
-    
 
-    public void Purchase()
+    public void TryBuyWallpaper()
     {
-        int cost = 1;
-        if (GameManager.Instance.Score >= cost)
+        if (GameManager.Instance.Score >= wallpaperCost)
         {
-            GameManager.Instance.AddScore(-cost);
-            feedbackText.text = "Unlocked!";
-
+            GameManager.Instance.AddScore(-wallpaperCost);
+            GameManager.Instance.UnlockPhoneBackground();
+            feedbackText.text = "Wallpaper Unlocked!";
         }
         else
         {
             feedbackText.text = "Not enough points!";
         }
-        Invoke(nameof(Clear), 2f);
     }
 
-    void Clear() => feedbackText.text = "";
 }
