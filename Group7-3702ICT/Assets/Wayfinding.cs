@@ -43,7 +43,6 @@ public class FootprintPath : MonoBehaviour
     {
         if (treasureChest == null)
         {
-            Debug.LogWarning("TreasureChest lost reference!");
             return;
         }
 

@@ -4,7 +4,7 @@ using UnityEngine.XR.Interaction.Toolkit;
 public class ClueClickPopup : UnityEngine.XR.Interaction.Toolkit.Interactables.XRBaseInteractable
 {
     public GameObject popupCanvas;
-    public FootprintPath2 footprintPath;  // Assign in inspector or dynamically
+    public FootprintPath2 footprintPath; 
     public Transform playerCamera;
     public GameObject questionMark;
 
@@ -29,7 +29,6 @@ public class ClueClickPopup : UnityEngine.XR.Interaction.Toolkit.Interactables.X
     {
         popupCanvas.SetActive(false);
 
-        // Destroy footprints spawned by this footprint path
         if (footprintPath != null)
         {
             footprintPath.ClearExistingFootprints();

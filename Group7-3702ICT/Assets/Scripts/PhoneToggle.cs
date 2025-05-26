@@ -1,6 +1,7 @@
 using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.XR.Interaction.Toolkit;
+using UnityEngine.UI;
 
 public class PhoneScreenManager : MonoBehaviour
 {
@@ -25,8 +26,17 @@ public class PhoneScreenManager : MonoBehaviour
     public GameObject hintRoot;
     [Header("Treasure view button")]  
     public GameObject treasureView;
-
-
+    [Tooltip("Bootprints")]
+    public GameObject bootPrints;
+    [Header("Phone Background Swap")]
+    [Tooltip("Phone Background")]
+    public Image phoneBackground;
+    [Tooltip("Default texture")]
+    public Sprite lockedSprite;
+    [Tooltip("Unlocked texture")]
+    public Sprite unlockedSprite;
+    public FootprintPath2 footprintPath;
+    public FootprintPath2 footprintPath2;
     private void Awake()
     {
         phoneScreen.SetActive(false);
@@ -37,6 +47,9 @@ public class PhoneScreenManager : MonoBehaviour
         hintRoot.SetActive(false);
         treasureView.SetActive(false);
         LeaveButton.SetActive(false);
+
+        bool unlocked = GameManager.Instance.PhoneBgUnlocked;
+        phoneBackground.sprite = unlocked ? unlockedSprite : lockedSprite;
     }
 
     private void OnEnable()
@@ -76,6 +89,21 @@ public class PhoneScreenManager : MonoBehaviour
         openButton.SetActive(true);
         treasureView.SetActive(false);
         LeaveButton.SetActive(false);
+        if (footprintPath != null)
+        {
+            footprintPath.ClearExistingFootprints();
+            footprintPath2.ClearExistingFootprints();
+
+        }
+    }
+    public void HintCloseMenu()
+    {
+        menuBackground.SetActive(false);
+        closeButton.SetActive(false);
+        openButton.SetActive(true);
+        treasureView.SetActive(false);
+        LeaveButton.SetActive(false);
+        bootPrints.SetActive(true);
     }
 
     public void OpenMenu()
@@ -85,5 +113,11 @@ public class PhoneScreenManager : MonoBehaviour
         openButton.SetActive(false);
         treasureView.SetActive(true);
         LeaveButton.SetActive(true);
+        bootPrints.SetActive(false);
+    }
+    public void UnlockPhoneBackground()
+    {
+        GameManager.Instance.UnlockPhoneBackground();  
+        phoneBackground.sprite = unlockedSprite;
     }
 }

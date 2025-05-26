@@ -30,7 +30,6 @@ public class FootprintPath2 : MonoBehaviour
             }
             else
             {
-                Debug.LogError("TreasureChest not assigned and not found by tag.");
                 return;
             }
         }
@@ -43,7 +42,6 @@ public class FootprintPath2 : MonoBehaviour
     {
         if (treasureChest == null)
         {
-            Debug.LogWarning("TreasureChest lost reference!");
             return;
         }
 
