@@ -1957,7 +1957,7 @@ GameObject:
   - component: {fileID: 796304245}
   - component: {fileID: 796304244}
   m_Layer: 0
-  m_Name: PointsRedeemManager
+  m_Name: Shopmanager
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
